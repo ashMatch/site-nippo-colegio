@@ -12,3 +12,8 @@
     background-color: black;
     color: #fff;
 }
+/* CARROSSEL */
+.carrosel-img {
+    height: 600px; 
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+}

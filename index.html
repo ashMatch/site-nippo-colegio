@@ -51,6 +51,49 @@
         </div>
     </nav>
  -->
+    
+    <!-- CARROSSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
+        <!-- INDICADORES (BOLINHAS) -->
+        <div class="carousel-indicators">
+            <!-- data-bs-target="#carouselExampleIndicators" diz ao botão que ele controla o carrossel com id="carouselExampleIndicators".
+                 data-bs-slide-to="0" define para qual slide o carrossel deve navegar quando o botão for clicado.
+                 aria-label é um rótulo para leitores de tela, descrevendo a função do botão. -->
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- SLIDES (IMAGENS) -->
+        <div class="carousel-inner">
+            <!-- carousel-inner é o contêiner que armazena as imagens do carrossel. -->
+            <div class="carousel-item active">
+                <!-- carousel-item define um slide no carrossel.
+                     active diz que este é o slide inicial. -->
+                <img class="d-block w-100 carrosel-img" src="imgs/images (1).jfif" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+                <!-- Display block "width 100%" -->
+                <img class="d-block w-100 carrosel-img" src="imgs/images (2).jfif" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 carrosel-img" src="imgs/images.jfif" alt="Terceiro Slide">
+            </div>
+        </div>
+
+        <!-- BOTÕES DE CONTROLE (ANTERIOR/PRÓXIMO) -->
+        <!-- data-bs-slide="prev" e data-bs-slide="next" controlam a navegação entre os slides.
+             aria-hidden="true" diz aos leitores de tela que o ícone é apenas visual e não precisa ser lido.
+             visually-hidden esconde o texto visualmente, mas mantém ele disponível para leitores de tela. -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
 
     <form action="resolution.php" method="POST">
         <h2>Formulário Tops</h2>
