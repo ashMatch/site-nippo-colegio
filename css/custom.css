@@ -15,5 +15,13 @@
 /* CARROSSEL */
 .carrosel-img {
     height: 600px; 
-    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+    object-fit: cover;
+}
+
+/* DEPOIMENTOS */
+#left {
+    margin-left: 150px;
+}
+#right {
+    margin-right: 150px;
 }
