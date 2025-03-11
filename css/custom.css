@@ -12,3 +12,16 @@
     background-color: black;
     color: #fff;
 }
+/* CARROSSEL */
+.carrosel-img {
+    height: 600px; 
+    object-fit: cover;
+}
+
+/* DEPOIMENTOS */
+#left {
+    margin-left: 150px;
+}
+#right {
+    margin-right: 150px;
+}
