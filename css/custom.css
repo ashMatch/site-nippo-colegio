@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Montserrat, sans-serif;
+}
+h1 {
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+p {
+    font-weight: medium;
+    font-size: 16px;
+}
+src {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
 .navbar{
     background-color: #DC143C;
 }
@@ -13,8 +32,20 @@
     color: #fff;
 }
 /* CARROSSEL */
-.carrosel-img {
-    height: 600px; 
+#carouselExampleIndicators {
+    height: 700px;
+}
+
+#carouselExampleIndicators .carousel-inner {
+    height: 100%;
+}
+
+#carouselExampleIndicators .carousel-item {
+    height: 100%;
+}
+
+#carouselExampleIndicators .carousel-item img {
+    height: 100%;
     object-fit: cover;
 }
 
@@ -24,4 +55,16 @@
 }
 #right {
     margin-right: 150px;
+}
+
+
+.custom-img {
+    border: 2px solid black; /* Borda vermelha para as imagens */
+}
+h1 {
+    color: black; /* Título em vermelho */
+}
+.embed-responsive {
+    max-width: 560px; /* Tamanho padrão do vídeo */
+    margin: 0 auto; /* Centralizar o vídeo */
 }
