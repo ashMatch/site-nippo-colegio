@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Montserrat, sans-serif;
+    color: black;
+}
+h1 {
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+p {
+    font-weight: medium;
+    font-size: 16px;
+}
+src {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 /* HEADER */
 header{
@@ -18,15 +38,36 @@ header{
 
 
 /* CARROSSEL */
-.carrosel-img {
-    height: 600px; 
+#carouselExampleIndicators {
+    height: 500px;
+}
+
+#carouselExampleIndicators .carousel-inner {
+    height: 100%;
+}
+
+#carouselExampleIndicators .carousel-item {
+    height: 100%;
+}
+
+#carouselExampleIndicators .carousel-item img {
+    height: 100%;
     object-fit: cover;
 }
 
 /* DEPOIMENTOS */
 #left {
-    margin-left: 150px;
+    margin-left: 8rem;
 }
 #right {
-    margin-right: 150px;
+    margin-right: 4rem;
+}
+
+.custom-img {
+    border: 2px solid black; 
+}
+
+.embed-responsive {
+    max-width: 560px; 
+    margin: 0 auto; 
 }
