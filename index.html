@@ -89,14 +89,14 @@
 
     <!-- Depoimentos -->
     <div class="container text-start mt-5">
-        <div class="row">
-            <div class="col" id="left">
-                <h1>
-                Lorem ipsum</h1>
-                <p style="margin-bottom: 100px">
+        <div class="row flex-nowrap justify-content-center align-items-center">
+            <!-- Coluna da Esquerda -->
+            <div class="col-5 d-flex flex-column" id="left">
+                <h1>Lorem ipsum</h1>
+                <p class="flex-grow-1 mb-3">
                     Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <ul class="list-unstyled d-flex justify-content-start">
+                <ul class="list-unstyled d-flex align-items-end justify-content-start ">
                     <li class="mx-2">
                         <img
                             src="imgs/aluno001.png"
@@ -126,15 +126,22 @@
                     </li>
                 </ul>
             </div>
-            <div class="col text-center" id="right">
+    
+            <!-- Coluna da Direita -->
+            <div class="col-6 text-center" id="right">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe 
-                    id="videoPlayer"
-                    width="315"
-                    height="500"
-                    src="https://www.youtube.com/embed/sItkZ-HcIpA?si=RkH0Z4jP-cZvceW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                    style="border-radius: 10px;"></iframe>
-                    
+                        id="videoPlayer"
+                        width="315"
+                        height="500"
+                        src="https://www.youtube.com/embed/sItkZ-HcIpA?si=RkH0Z4jP-cZvceW8" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen
+                        style="border-radius: 10px;"
+                    ></iframe>
                 </div>
             </div>
         </div>

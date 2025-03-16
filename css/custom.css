@@ -2,6 +2,7 @@
 
 * {
     font-family: Montserrat, sans-serif;
+    color: black;
 }
 h1 {
     font-weight: bold;
@@ -33,7 +34,7 @@ src {
 }
 /* CARROSSEL */
 #carouselExampleIndicators {
-    height: 700px;
+    height: 500px;
 }
 
 #carouselExampleIndicators .carousel-inner {
@@ -51,20 +52,17 @@ src {
 
 /* DEPOIMENTOS */
 #left {
-    margin-left: 150px;
+    margin-left: 8rem;
 }
 #right {
-    margin-right: 150px;
+    margin-right: 4rem;
 }
-
 
 .custom-img {
-    border: 2px solid black; /* Borda vermelha para as imagens */
+    border: 2px solid black; 
 }
-h1 {
-    color: black; /* Título em vermelho */
-}
+
 .embed-responsive {
-    max-width: 560px; /* Tamanho padrão do vídeo */
-    margin: 0 auto; /* Centralizar o vídeo */
+    max-width: 560px; 
+    margin: 0 auto; 
 }
