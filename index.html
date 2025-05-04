@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- Navbar Atualizada -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-crimson fixed-top shadow-sm">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#inicio">
             <img src="imgs/colegio-nippo-logo-removebg-preview.png" alt="Logo Nippo" width="120" class="logo-hover">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNippo" 
@@ -23,49 +23,44 @@
         <div class="collapse navbar-collapse" id="navbarNippo">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link px-3 active" href="#">Home</a>
+                    <a class="nav-link px-3 active" href="#inicio">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#">Quem Somos</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link px-3 dropdown-toggle" href="#" id="propostaDropdown" 
-                      role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Proposta Pedagógica
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="propostaDropdown">
-                        <li><a class="dropdown-item" href="#">Metodologia</a></li>
-                        <li><a class="dropdown-item" href="#">Professores</a></li>
-                        <li><a class="dropdown-item" href="#">Diferenciais</a></li>
-                    </ul>
+                    <a class="nav-link px-3" href="#quem-somos">Quem Somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#">Concursos e bolsas</a>
+                    <a class="nav-link px-3" href="#proposta-pedagogica">Proposta Pedagógica</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#">Aprovações</a>
+                    <a class="nav-link px-3" href="#estrutura">Estrutura</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#">Conteúdos</a>
+                    <a class="nav-link px-3" href="#depoimentos">Depoimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="https://wa.me/551599999999" target="_blank">Contato</a>
                 </li>
             </ul>
             <div class="d-flex">
-                <button type="button" class="btn btn-warning fw-bold">Área do Aluno</button>
+                <a href="login.html" class="btn btn-warning fw-bold">Entrar</a>
             </div>
         </div>
     </div>
-  </nav>
+</nav>
 
-  <!-- Carrossel -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <!-- Carrossel Principal -->
+  <div id="inicio" class="carousel slide" data-bs-ride="carousel" id="carouselPrincipal">
       <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="4" aria-label="Slide 5"></button>
       </div>
-      <div class="carousel-inner mt-5">
+      <div class="carousel-inner">
           <div class="carousel-item active">
               <img src="imgs/carrossel-img-1.jpg" class="d-block w-100" alt="img 1">
           </div>
@@ -82,99 +77,120 @@
               <img src="imgs/carrossel-img-5.jpg" class="d-block w-100" alt="img 5">
           </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Próximo</span>
       </button>
   </div>
 
-  <!-- Letreiro -->
-  <section class="news-ticker py-3 bg-dark">
-    <div class="container">
-      <div class="ticker-container">
-        <div class="ticker-track">
-          <!-- Itens do letreiro -->
-          <div class="ticker-item">
-            <span class="ticker-number">15.000+</span>
-            <span class="ticker-text">Alunos formados</span>
-          </div>
-          <div class="ticker-item">
-            <span class="ticker-number">99%</span>
-            <span class="ticker-text">Taxa de aprovação</span>
-          </div>
-          <div class="ticker-item">
-            <span class="ticker-number">1.200+</span>
-            <span class="ticker-text">Aprovados em medicina</span>
-          </div>
-          <div class="ticker-item">
-            <span class="ticker-number">10x</span>
-            <span class="ticker-text">Mais aprovações</span>
-          </div>
-          <div class="ticker-item">
-            <span class="ticker-number">98%</span>
-            <span class="ticker-text">Satisfação dos alunos</span>
-          </div>
-          <div class="ticker-item">
-            <span class="ticker-number">500+</span>
-            <span class="ticker-text">Bolsas oferecidas</span>
-          </div>
-          <div class="ticker-item">
-            <span class="ticker-number">25</span>
-            <span class="ticker-text">Anos de experiência</span>
-          </div>
-          <div class="ticker-item">
-            <span class="ticker-number">3.5k</span>
-            <span class="ticker-text">Aulas disponíveis</span>
-          </div>
-          <div class="ticker-item">
-            <span class="ticker-number">100%</span>
-            <span class="ticker-text">Professores especializados</span>
-          </div>
-          <div class="ticker-item">
-            <span class="ticker-number">TOP 1</span>
-            <span class="ticker-text">Melhor escola do estado</span>
-          </div>
+<!-- Letreiro -->
+<section class="news-ticker py-3 bg-dark">
+  <div class="container-fluid px-0">
+    <div class="ticker-container">
+      <div class="ticker-track">
+        <!-- Itens do letreiro (duplicados para efeito infinito) -->
+        <div class="ticker-item">
+          <span class="ticker-number">15.000+</span>
+          <span class="ticker-text">Alunos formados</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-number">99%</span>
+          <span class="ticker-text">Taxa de aprovação</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-number">1.200+</span>
+          <span class="ticker-text">Aprovados em medicina</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-number">10x</span>
+          <span class="ticker-text">Mais aprovações</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-number">98%</span>
+          <span class="ticker-text">Satisfação dos alunos</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-number">500+</span>
+          <span class="ticker-text">Bolsas oferecidas</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-number">25</span>
+          <span class="ticker-text">Anos de experiência</span>
+        </div>
+        <!-- Itens duplicados (IMPORTANTE: devem ser iguais aos primeiros) -->
+        <div class="ticker-item">
+          <span class="ticker-number">15.000+</span>
+          <span class="ticker-text">Alunos formados</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-number">99%</span>
+          <span class="ticker-text">Taxa de aprovação</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-number">1.200+</span>
+          <span class="ticker-text">Aprovados em medicina</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-number">10x</span>
+          <span class="ticker-text">Mais aprovações</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-number">98%</span>
+          <span class="ticker-text">Satisfação dos alunos</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-number">500+</span>
+          <span class="ticker-text">Bolsas oferecidas</span>
+        </div>
+        <div class="ticker-item">
+          <span class="ticker-number">25</span>
+          <span class="ticker-text">Anos de experiência</span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Depoimentos -->
-  <section class="depoimentos py-5">
+  <!-- Seção Quem Somos -->
+  <section id="quem-somos" class="quem-somos py-5 bg-light">
     <div class="container">
-        <div class="depoimento-container">
-            <!-- Coluna do Texto -->
-            <div class="depoimento-texto">
-                <h1 class="depoimento-titulo">DEPOIMENTOS</h1>
-                <h2 class="aluno-nome">Luan da Silva</h2>
-                <p class="aluno-texto">
-                    "Estudar no Colégio Nippo foi a melhor decisão que já tomei. Os professores são extremamente dedicados e o método de ensino é incrível. 
-                    Em apenas 1 ano, minha performance escolar melhorou em 300%. Fui aprovado em Medicina na USP graças ao apoio que recebi aqui!"
-                </p>
-                <p class="aluno-texto">
-                    "O ambiente é acolhedor e as aulas são dinâmicas. Recomendo para todos que querem realmente se destacar nos vestibulares."
-                </p>
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="imgs/quem-somos-img.jpg" alt="Colégio Nippo" class="img-fluid border border-3 border-black shadow">
             </div>
             
-            <!-- Coluna da Foto -->
-            <div class="depoimento-foto">
-                <img src="imgs/aluno001.png" class="aluno-foto" alt="Ana Carolina Silva">
+            <div class="col-lg-6">
+                <h2 class="titulo-destaque mb-4">QUEM SOMOS</h2>
+                <p class="lead fw-bold mb-4">O Colégio Nippo é referência em educação de excelência há 25 anos.</p>
+                
+                <div class="destaque-box bg-white p-4 mb-4 border border-2 border-black">
+                    <p class="mb-0">"Nossa missão é transformar vidas através de um método pedagógico inovador, focado em resultados reais nos vestibulares e no desenvolvimento humano."</p>
+                </div>
+                
+                <ul class="lista-diferenciais">
+                    <li><i class="bi bi-check-circle-fill text-crimson me-2"></i> Fundado em 1999 por educadores premiados</li>
+                    <li><i class="bi bi-check-circle-fill text-crimson me-2"></i> 92% de aprovação em universidades públicas</li>
+                    <li><i class="bi bi-check-circle-fill text-crimson me-2"></i> Metodologia exclusiva "Nippo de Aprendizagem"</li>
+                    <li><i class="bi bi-check-circle-fill text-crimson me-2"></i> Foco em STEM (Ciências, Tecnologia, Engenharia e Matemática)</li>
+                </ul>
             </div>
         </div>
     </div>
   </section>
 
+  <!-- Nova Seção Proposta Pedagógica -->
+
+
   <!-- Seção Estrutura -->
-  <section class="estrutura py-5 bg-light">
+  <section id="estrutura" class="estrutura py-5 bg-light">
     <div class="container">
       <h2 class="text-center mb-5 titulo-destaque">NOSSA ESTRUTURA</h2>
       
       <div class="row g-4">
-        <!-- Card 1 -->
         <div class="col-md-4">
           <div class="card-estrutura">
             <div class="card-icon">
@@ -185,7 +201,6 @@
           </div>
         </div>
         
-        <!-- Card 2 -->
         <div class="col-md-4">
           <div class="card-estrutura">
             <div class="card-icon">
@@ -196,7 +211,6 @@
           </div>
         </div>
         
-        <!-- Card 3 -->
         <div class="col-md-4">
           <div class="card-estrutura">
             <div class="card-icon">
@@ -207,7 +221,6 @@
           </div>
         </div>
         
-        <!-- Card 4 -->
         <div class="col-md-4">
           <div class="card-estrutura">
             <div class="card-icon">
@@ -218,7 +231,6 @@
           </div>
         </div>
         
-        <!-- Card 5 -->
         <div class="col-md-4">
           <div class="card-estrutura">
             <div class="card-icon">
@@ -229,7 +241,6 @@
           </div>
         </div>
         
-        <!-- Card 6 -->
         <div class="col-md-4">
           <div class="card-estrutura">
             <div class="card-icon">
@@ -240,59 +251,168 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Seção Depoimentos Atualizada -->
+  <section id="depoimentos" class="depoimentos py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center mb-5 titulo-destaque">DEPOIMENTOS</h2>
+        
+        <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 mb-4 mb-md-0 text-center">
+                            <div class="moldura-foto">
+                                <img src="imgs/aluno001.png" class="foto-aluno" alt="Luan da Silva">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="depoimento-box">
+                                <div class="aluno-avaliacao mb-3">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h3 class="aluno-nome mb-3">Luan da Silva</h3>
+                                <p class="aluno-texto fst-italic">"O Colégio Nippo mudou minha vida! Em um ano de preparação, fui aprovado em Medicina na USP. Os professores são especialistas que realmente se importam com o aprendizado."</p>
+                                <p class="aluno-curso text-muted">Medicina USP - 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 mb-4 mb-md-0 text-center">
+                            <div class="moldura-foto">
+                                <img src="imgs/aluno002.png" class="foto-aluno" alt="Ana Carolina">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="depoimento-box">
+                                <div class="aluno-avaliacao mb-3">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <h3 class="aluno-nome mb-3">Ana Carolina</h3>
+                                <p class="aluno-texto fst-italic">"Material didático excelente e aulas dinâmicas. Fui aprovada no ITA graças ao método de resolução de problemas do Nippo, que é único no mercado."</p>
+                                <p class="aluno-curso text-muted">Engenharia ITA - 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+  </section>
+
+  <!-- Seção FAQ Atualizada -->
+  <section id="faq" class="faq py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center mb-5">
+          <h2 class="titulo-destaque">PERGUNTAS FREQUENTES</h2>
+          <p class="lead">Tire suas dúvidas sobre o Colégio Nippo</p>
+        </div>
+      </div>
       
-      <div class="text-center mt-5">
-        <button class="btn btn-crimson">AGENDE UMA VISITA</button>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="accordionFAQ">
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Como é o processo seletivo?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  O processo consiste em prova escrita e entrevista com a equipe pedagógica.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Qual a metodologia utilizada?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Utilizamos metodologia ativa com foco em resolução de problemas e aprendizagem significativa.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Há bolsas de estudo disponíveis?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                  Sim, oferecemos bolsas por mérito acadêmico e necessidade financeira.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-5">
+  <footer class="py-5 bg-crimson text-white">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-3 mb-4 mb-md-0">
-          <img 
-            src="imgs/colegio-nippo-logo-removebg-preview.png" 
-            alt="Logo Nippo" 
-            class="img-fluid" 
-            style="max-width: 180px;"
-          >
+          <img src="imgs/colegio-nippo-logo-removebg-preview.png" alt="Logo Nippo" class="img-fluid" style="max-width: 180px;">
         </div>
         <div class="col-md-9">
           <div class="row">
             <div class="col-sm-4 mb-4 mb-sm-0">
               <h5 class="mb-3">Institucional</h5>
               <ul class="list-unstyled">
-                <li class="mb-2"><a href="#" class="text-decoration-none">Quem Somos</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none">Proposta Pedagógica</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none">Estrutura</a></li>
+                <li class="mb-2"><a href="#quem-somos" class="text-white text-decoration-none">Quem Somos</a></li>
+                <li class="mb-2"><a href="#proposta-pedagogica" class="text-white text-decoration-none">Proposta Pedagógica</a></li>
               </ul>
             </div>
             <div class="col-sm-4 mb-4 mb-sm-0">
               <h5 class="mb-3">Cursos</h5>
               <ul class="list-unstyled">
-                <li class="mb-2"><a href="#" class="text-decoration-none">Ensino Fundamental</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none">Ensino Médio</a></li>
-                <li class="mb-2"><a href="#" class="text-decoration-none">Pré-Vestibular</a></li>
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Ensino Médio</a></li>
+                <li class="mb-2"><a href="#" class="text-white text-decoration-none">Pré-Vestibular</a></li>
               </ul>
             </div>
             <div class="col-sm-4">
               <h5 class="mb-3">Contato</h5>
               <ul class="list-unstyled">
                 <li class="mb-2">
-                  <a href="tel:+5511999999999" class="text-decoration-none">
-                    <i class="bi bi-telephone me-2"></i>(11) 99999-9999
+                  <a href="https://wa.me/551599999999" class="text-white text-decoration-none" target="_blank">
+                    <i class="bi bi-whatsapp me-2"></i>(15) 9999-9999
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="mailto:contato@nippo.com.br" class="text-decoration-none">
+                  <a href="mailto:contato@nippo.com.br" class="text-white text-decoration-none">
                     <i class="bi bi-envelope me-2"></i>contato@nippo.com.br
-                  </a>
-                </li>
-                <li class="mb-2">
-                  <a href="#" class="text-decoration-none">
-                    <i class="bi bi-geo-alt me-2"></i>Av. Paulista, 1000 - SP
                   </a>
                 </li>
               </ul>
@@ -300,25 +420,47 @@
           </div>
         </div>
       </div>
-      <div class="text-center pt-4 mt-4 border-top">
+      <div class="text-center pt-4 mt-4 border-top border-white">
         <p class="mb-0">
-          &copy; 2025 Nippo. Todos os direitos reservados.
+          &copy; 2025 Colégio Nippo. Todos os direitos reservados.
         </p>
       </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script>
-      function mudarVideo(src) {
-          const videoPlayer = document.getElementById('videoPlayer');
-          videoPlayer.src = src;
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+      // Scroll suave para âncoras
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+              e.preventDefault();
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
 
-          const images = document.querySelectorAll('.custom-img');
-          images.forEach(img => img.classList.remove('active'));
-
-          event.target.classList.add('active');
-      }
+      // Letreiro infinito corrigido
+      document.addEventListener('DOMContentLoaded', function() {
+          const tickerTrack = document.querySelector('.ticker-track');
+          const tickerItems = document.querySelectorAll('.ticker-item');
+          const tickerWidth = tickerItems[0].offsetWidth;
+          
+          // Duplica os itens para efeito contínuo
+          tickerItems.forEach(item => {
+              const clone = item.cloneNode(true);
+              tickerTrack.appendChild(clone);
+          });
+          
+          // Configura a animação
+          const tickerContainer = document.querySelector('.ticker-container');
+          const tickerContent = document.querySelector('.ticker-track');
+          
+          // Calcula a duração baseada no comprimento do conteúdo
+          const contentWidth = tickerContent.scrollWidth / 2;
+          const duration = contentWidth / 50; // Ajuste a velocidade aqui
+          
+          tickerContent.style.animationDuration = duration + 's';
+      });
   </script>
 </body>
 </html>
